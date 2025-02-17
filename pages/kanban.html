@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor e Tradição - Kanban</title>
+    
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/vars.css">
+    <link rel="stylesheet" href="../styles/header-footer-nav.css">
+    <link rel="stylesheet" href="../styles/main-content-kanban.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <h1 class="header-title">Sabor & Tradição</h1>
+        <nav class="navbar">
+            <a href="login.html" class="navbar-button"><i class="fas fa-user"></i> Login</a>
+            <a href="pedidos.html" class="navbar-button"><i class="fas fa-utensils"></i> Pedidos & Reservas</a>
+            <a href="kanban.html" class="navbar-button"><i class="fas fa-th"></i> Kanban</a>
+            <a href="../index.html" class="navbar-button"><i class="fas fa-home"></i> Home</a>
+            <a href="estoque.html" class="navbar-button"><i class="fas fa-box"></i> Estoque</a>
+            <a href="relatorio.html" class="navbar-button"><i class="fas fa-chart-line"></i> Relatórios</a>
+            <a href="vendas.html" class="navbar-button"><i class="fas fa-shopping-cart"></i> Painel de Vendas</a>
+        </nav>
+    </header>
+
+    <div class="botao-kanban">
+        <button id="editar-pedido" class="editar-kanban"><i class="fas fa-edit"></i> Editar Pedido</button>
+        <button id="remover-pedido" class="editar-kanban"><i class="fas fa-edit"></i> Remover Pedido</button>
+    </div>
+
+    <main class="kanban-board">
+        <div class="kanban-column" id="todo" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>A Fazer</h2>
+            <div class="kanban-cards" id="todo-cards">
+                <div class="kanban-card">
+                    <h3>Pedido: 001</h3>
+                    <p class="pedido-kanban-font">03x File Mignon c/ Batata-Frita</p>
+                    <p class="mesa-kanban">Mesa: 5</p>
+                    <p class="garcom-kanban">Garçom: João</p>
+                </div>
+                <div class="kanban-card">
+                    <h3>Pedido: 002</h3>
+                    <p class="pedido-kanban-font">01x Salmão Grelhado e 02 x Coca-Cola</p>
+                    <p class="mesa-kanban">Mesa: 3</p>
+                    <p class="garcom-kanban">Garçom: Maria</p>
+                </div>
+                <div class="kanban-card">
+                    <h3>Pedido: 003</h3>
+                    <p class="pedido-kanban-font">01x Carbonara, 03x Iscas de Peixe e 05x Coca-Cola</p>
+                    <p class="mesa-kanban">Mesa: 8</p>
+                    <p class="garcom-kanban">Garçom: Carlos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="kanban-column" id="in-progress" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Em Progresso</h2>
+            <div class="kanban-cards" id="in-progress-cards">
+                <div class="kanban-card">
+                    <h3>Pedido: 001</h3>
+                    <p class="pedido-kanban-font">02x Pratos Kids, 01x File Mignon, 01x Salmão Grelhado, 04x Guaraná</p>
+                    <p class="mesa-kanban">Mesa: 5</p>
+                    <p class="garcom-kanban">Garçom: João</p>
+                </div>
+                <div class="kanban-card">
+                    <h3>Pedido: 002</h3>
+                    <p class="pedido-kanban-font">01x Salmão Grelhado e 02 x Coca-Cola</p>
+                    <p class="mesa-kanban">Mesa: 3</p>
+                    <p class="garcom-kanban">Garçom: Maria</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="kanban-column" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <h2>Feito</h2>
+            <div class="kanban-cards" id="done-cards">
+                <div class="kanban-card">
+                    <h3>Pedido: 001</h3>
+                    <p class="pedido-kanban-font">03x File Mignon c/ Batata-Frita</p>
+                    <p class="mesa-kanban">Mesa: 5</p>
+                    <p class="garcom-kanban">Garçom: João</p>
+                </div>
+                <div class="kanban-card">
+                    <h3>Pedido: 002</h3>
+                    <p class="pedido-kanban-font">01x Salmão Grelhado e 02 x Coca-Cola</p>
+                    <p class="mesa-kanban">Mesa: 3</p>
+                    <p class="garcom-kanban">Garçom: Maria</p>
+                </div>
+                <div class="kanban-card">
+                    <h3>Pedido: 001</h3>
+                    <p class="pedido-kanban-font">03x File Mignon c/ Batata-Frita</p>
+                    <p class="mesa-kanban">Mesa: 5</p>
+                    <p class="garcom-kanban">Garçom: João</p>
+                </div>
+                <div class="kanban-card">
+                    <h3>Pedido: 002</h3>
+                    <p class="pedido-kanban-font">01x Salmão Grelhado e 02 x Coca-Cola</p>
+                    <p class="mesa-kanban">Mesa: 3</p>
+                    <p class="garcom-kanban">Garçom: Maria</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p class="copyright">© 2025 BisBranco. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/kanban.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor e Tradição - Home</title>
+    
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/vars.css">
+    <link rel="stylesheet" href="../styles/header-footer-nav.css">
+    <link rel="stylesheet" href="../styles/main-content-relatorios.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <h1 class="header-title">Sabor & Tradição</h1>
+        <nav class="navbar">
+            <a href="login.html" class="navbar-button"><i class="fas fa-user"></i> Login</a>
+            <a href="pedidos.html" class="navbar-button"><i class="fas fa-utensils"></i> Pedidos & Reservas</a>
+            <a href="kanban.html" class="navbar-button"><i class="fas fa-th"></i> Kanban</a>
+            <a href="../index.html" class="navbar-button"><i class="fas fa-home"></i> Home</a>
+            <a href="estoque.html" class="navbar-button"><i class="fas fa-box"></i> Estoque</a>
+            <a href="relatorios.html" class="navbar-button"><i class="fas fa-chart-line"></i> Relatórios</a>
+            <a href="vendas.html" class="navbar-button"><i class="fas fa-shopping-cart"></i> Painel de Vendas</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="main-title-estoque">Relatórios</h1>
+
+        <div class="input-date-section">
+            <label class="text-input-date" for="data">Selecione uma data:</label>
+            <input class="input-date" type="date" id="data" name="data">
+            <button class="button-input-date" id="buscar-data"><i class="fas fa-search"></i> Buscar</button>
+            <button class="button-input-date" id="exportar-produto"><i class="fas fa-file-export"></i> Exportar</button>            
+        </div>
+        <h1 class="date">Data do Relatório: 17/02/2025</h1>
+        <div class="central-de-selects">
+            <select id="Tipo-de-Comida" name="opcoes">
+                <option value="opcao1">Selecione a Comida:</option>
+                <option value="opcao2">Pratos</option>
+                <option value="opcao3">Petiscos</option>
+                <option value="opcao4">Bebidas</option>
+                <option value="opcao5">Drinks</option>
+            </select>
+            <select id="Ordem-de-Venda" name="opcoes">
+                <option value="opcao1">Selecione o Filtro:</option>
+                <option value="opcao2">Mais Vendido</option>
+                <option value="opcao3">Menos Vendido</option>
+                <option value="opcao4">Mais Caro</option>
+                <option value="opcao5">Mais Barato</option>
+            </select>
+        </div>
+        <div class="content-table-estoque">
+            <table class="estoque-table">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Filé Mignon c/ Fritas</td>
+                        <td>107</td>
+                        <td>R$ 119,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Macarrão c/ Molho Branco</td>
+                        <td>34</td>
+                        <td>R$ 79,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Coca-Cola</td>
+                        <td>329</td>
+                        <td>R$ 5,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pinã Colada</td>
+                        <td>123</td>
+                        <td>R$ 29,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tilápia c/ Molho de Espinafre</td>
+                        <td>102</td>
+                        <td>R$ 79,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Salmão Grelhado</td>
+                        <td>198</td>
+                        <td>R$ 109,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Guaraná Zero</td>
+                        <td>234</td>
+                        <td>R$ 5,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Macarrão c/ Molho Vermelho</td>
+                        <td>95</td>
+                        <td>R$ 79,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Prato Kids</td>
+                        <td>116</td>
+                        <td>R$ 59,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X-Bacon</td>
+                        <td>39</td>
+                        <td>R$ 39,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X-Bacon Egg</td>
+                        <td>89</td>
+                        <td>R$ 43,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>X-Tudo</td>
+                        <td>103</td>
+                        <td>R$ 59,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pepsi</td>
+                        <td>92</td>
+                        <td>R$ 5,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Porção de Batata-Frita</td>
+                        <td>144</td>
+                        <td>R$ 39,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Porção de Isca de Peixe</td>
+                        <td>87</td>
+                        <td>R$ 59,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Feijoada</td>
+                        <td>14</td>
+                        <td>R$ 79,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Balde de Cerveja</td>
+                        <td>89</td>
+                        <td>R$ 69,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caipirinha de Maracujá</td>
+                        <td>45</td>
+                        <td>R$ 29,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caipirinha de Limão</td>
+                        <td>87</td>
+                        <td>R$ 29,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Caipirinha de Frutas Vermelhas</td>
+                        <td>89</td>
+                        <td>R$ 39,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Petit Gateau</td>
+                        <td>92</td>
+                        <td>R$ 49,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pudim</td>
+                        <td>23</td>
+                        <td>R$ 12,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pastel Doce</td>
+                        <td>54</td>
+                        <td>R$ 14,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Temaki</td>
+                        <td>34</td>
+                        <td>R$ 39,99</td>
+                        <td>
+                            <button class="edit-button"><i class="fas fa-edit"></i></button>
+                            <button class="delete-button"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <!-- Adicione mais produtos conforme necessário -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">© 2025 BisBranco. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

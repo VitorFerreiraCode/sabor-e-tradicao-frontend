@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor e Tradição - Kanban</title>
+    
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/vars.css">
+    <link rel="stylesheet" href="../styles/header-footer-nav.css">
+    <link rel="stylesheet" href="../styles/main-content-pedidos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <h1 class="header-title">Sabor & Tradição</h1>
+        <nav class="navbar">
+            <a href="login.html" class="navbar-button"><i class="fas fa-user"></i> Login</a>
+            <a href="pedidos.html" class="navbar-button"><i class="fas fa-utensils"></i> Pedidos & Reservas</a>
+            <a href="kanban.html" class="navbar-button"><i class="fas fa-th"></i> Kanban</a>
+            <a href="../index.html" class="navbar-button"><i class="fas fa-home"></i> Home</a>
+            <a href="estoque.html" class="navbar-button"><i class="fas fa-box"></i> Estoque</a>
+            <a href="relatorio.html" class="navbar-button"><i class="fas fa-chart-line"></i> Relatórios</a>
+            <a href="vendas.html" class="navbar-button"><i class="fas fa-shopping-cart"></i> Painel de Vendas</a>
+        </nav>
+    </header>
+
+    <main class="main-content-general">
+        <div class="main-content">
+            <div class="container-criar-pedido">
+                <h2>Adicione o pedido</h2>
+                <form>
+                    <label for="nome-pedido">Nome do Pedido:</label>
+                    <input type="text" id="nome-pedido" name="nome-pedido" required placeholder="Informe os Pedidos">
+                    
+                    <label for="mesa">Mesa:</label>
+                    <input type="number" id="mesa" name="mesa" required placeholder="Informe a mesa">
+                    
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+        </div>
+        <div class="main-content-mesas">
+            <h2>Mesas Reservadas</h2>
+            <div class="mesas-container">
+                <script>
+                    for (let i = 1; i <= 20; i++) {
+                        document.write(`<div class='mesa-icon'>${i}</div>`);
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="main-content-mesas">
+            <h2>Mesas Ocupadas</h2>
+            <div class="mesas-container">
+                <script>
+                    for (let i = 31; i <= 50; i++) {
+                        document.write(`<div class='mesa-icon2'>${i}</div>`);
+                    }
+                </script>
+            </div>
+    </main>
+
+    
+    <footer class="footer">
+        <p class="copyright">© 2025 BisBranco. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../scripts/kanban.js"></script>
+</body>
+</html>

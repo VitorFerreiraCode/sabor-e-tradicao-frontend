@@ -1,0 +1,9 @@
+.content {
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.content .subtitle-index {
+    font-size: 1.25rem;
+}

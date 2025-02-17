@@ -1,0 +1,118 @@
+.main-content-general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-container-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.container-criar-pedido h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container-criar-pedido {
+    width: 100%;
+}
+
+.container-criar-pedido input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.container-criar-pedido button {
+    width: 100%;
+    font-weight: 600;
+    background-color: var(--header-color);
+    color: var(--text-base-light);
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.container-criar-pedido button:hover {
+    background-color: #a93226;
+    transform: scale(1.05);
+}
+
+.mesas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+    max-width: 600px;
+    margin-top: 1rem;
+}
+
+.main-content-mesas {
+    margin-top: 2.25rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-container-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.mesa-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #28a745;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mesa-icon:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.mesa-icon2 {
+    width: 50px;
+    height: 50px;
+    background-color: #d01a1a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 1rem;
+}
+
+.mesa-icon2:hover {
+    background-color: #910f0f;
+    transform: scale(1.1);
+}

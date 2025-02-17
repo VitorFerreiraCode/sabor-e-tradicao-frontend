@@ -1,0 +1,107 @@
+.main-title-estoque {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.stock-form {
+    display: flex;
+    justify-content: center;
+}
+
+.stock-form .stock-form-input {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.stock-form .stock-form-button {
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    margin-left: 0.5rem;
+    background-color: var(--header-color);
+    color: var(--text-base-light);
+}
+
+.stock-form .stock-form-button:hover {
+    background-color: #3a0000;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+#stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#stock-table th, #stock-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#stock-table th {
+    background-color: var(--header-color);
+    color: white;
+}
+
+#stock-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+#stock-table-warning {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff3cd;
+}
+
+#stock-table-warning th, #stock-table-warning td {
+    border: 1px solid #856404;
+    padding: 8px;
+    text-align: center;
+}
+
+#stock-table-warning th {
+    background-color: #ffeeba;
+    color: #856404;
+}
+
+#stock-table-warning tbody tr:hover {
+    background-color: #ffeeba;
+}
+
+.edit-button, .delete-button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007bff; /* Azul */
+    color: white;
+}
+
+.delete-button {
+    background-color: #dc3545; /* Vermelho */
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3; /* Azul escuro */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Vermelho escuro */
+}
+

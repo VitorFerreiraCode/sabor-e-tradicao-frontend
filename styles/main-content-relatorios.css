@@ -1,0 +1,138 @@
+.main-title-estoque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+
+.input-date-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.text-input-date,
+.input-date,
+.button-input-date {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.button-input-date {
+    border-radius: 8px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    margin-left: 0.5rem;
+    background-color: var(--header-color);
+    color: var(--text-base-light);
+}
+
+.button-input-date:hover {
+    background-color: #3a0000;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.content-table-estoque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.adicionar-item {
+    padding: 0.5rem;
+    background-color: var(--header-color);
+    color: var(--text-base-light);
+    border-radius: 8px;
+}
+
+.estoque-table {
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.estoque-table th,
+.estoque-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.estoque-table th {
+    background-color: var(--header-color);
+    color: var(--text-base-light);
+}
+
+.estoque-table tr:nth-child(even) {
+    background-color: var(--text-base-light);
+}
+
+.estoque-table tr:hover {
+    background-color: #ffd1d1;
+}
+
+.date {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.central-de-selects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.central-de-selects select {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.estoque-table td i {
+    margin: 0 5px;
+    cursor: pointer; 
+}
+
+.edit-button, .delete-button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-button {
+    background-color: #dc3545; 
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #0056b3; 
+}
+
+.delete-button:hover {
+    background-color: #c82333; 
+}

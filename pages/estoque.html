@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor e Tradição - Home</title>
+    
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/vars.css">
+    <link rel="stylesheet" href="../styles/header-footer-nav.css">
+    <link rel="stylesheet" href="../styles/main-content-estoque.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <h1 class="header-title">Sabor & Tradição</h1>
+        <nav class="navbar">
+            <a href="login.html" class="navbar-button"><i class="fas fa-user"></i> Login</a>
+            <a href="pedidos.html" class="navbar-button"><i class="fas fa-utensils"></i> Pedidos & Reservas</a>
+            <a href="kanban.html" class="navbar-button"><i class="fas fa-th"></i> Kanban</a>
+            <a href="../index.html" class="navbar-button"><i class="fas fa-home"></i> Home</a>
+            <a href="estoque.html" class="navbar-button"><i class="fas fa-box"></i> Estoque</a>
+            <a href="relatorios.html" class="navbar-button"><i class="fas fa-chart-line"></i> Relatórios</a>
+            <a href="vendas.html" class="navbar-button"><i class="fas fa-shopping-cart"></i> Painel de Vendas</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="main-title-estoque">Estoque</h1>
+        
+        <form class="stock-form" id="stock-form">
+            <input class="stock-form-input" type="text" id="item-name" placeholder=" Nome do Item:" required>
+            <input class="stock-form-input" type="number" id="item-quantity" placeholder=" Quantidade:" required>
+            <input class="stock-form-input" type="number" id="item-price" placeholder=" Valor:" required>
+            <button class="stock-form-button" type="submit">Adicionar Item</button>
+        </form>
+
+        <table id="stock-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Item</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="item-1">
+                    <td>1</td><td>Coxão Mole</td><td>20 kg</td><td>R$ 52,99 kg</td>
+                    <td>
+                        <button class="edit-button" onclick="openEditModal(1)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteItem(1)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="item-34">
+                    <td>34</td><td>Coxão Duro</td><td>75 kg</td><td>R$ 43,99 kg</td>
+                    <td>
+                        <button class="edit-button" onclick="openEditModal(34)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteItem(34)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="item-23">
+                    <td>23</td><td>Carne Moída<td>120 kg</td><td>R$ 28,99 kg</td>
+                    <td>
+                        <button class="edit-button" onclick="openEditModal(23)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteItem(23)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="item-73">
+                    <td>73</td><td>Salmão</td><td>37 kg</td><td>R$ 97,99 kg</td>
+                    <td>
+                        <button class="edit-button" onclick="openEditModal(73)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteItem(73)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="item-4">
+                    <td>4</td><td>Batata-Frita</td><td>90 kg</td><td>R$ 17,99 kg</td>
+                    <td>
+                        <button class="edit-button" onclick="openEditModal(4)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteItem(4)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr id="item-13">
+                    <td>13</td><td>Coca-Cola</td><td>309 un</td><td>R$ 5,99 un</td>
+                    <td>
+                        <button class="edit-button" onclick="openEditModal(13)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteItem(13)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h1 class="main-title-estoque">Tabela de Avisos</h1>
+        <table id="stock-table-warning">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome do Item</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td><td>Coxão Mole</td><td>20 kg</td><td>R$ 52,99 un</td>
+                    <td>
+                        <button class="edit-button" onclick="openEditModal(1)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteItem(1)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td><td>Coca-Cola Zero</td><td>29 un</td><td>R$ 5,99 un</td>
+                    <td>
+                        <button class="edit-button" onclick="openEditModal(12)">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                        <button class="delete-button" onclick="deleteItem(12)">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="footer">
+        <p class="copyright">© 2025 BisBranco. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../scripts/estoque.js"></script>
+</body>
+</html>
