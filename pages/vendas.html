@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor e Tradição - Home</title>
+    
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/vars.css">
+    <link rel="stylesheet" href="../styles/header-footer-nav.css">
+    <link rel="stylesheet" href="../styles/main-content-vendas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-container">
+        <h1 class="header-title">Sabor & Tradição</h1>
+        <nav class="navbar">
+            <a href="login.html" class="navbar-button"><i class="fas fa-user"></i> Login</a>
+            <a href="pedidos.html" class="navbar-button"><i class="fas fa-utensils"></i> Pedidos & Reservas</a>
+            <a href="kanban.html" class="navbar-button"><i class="fas fa-th"></i> Kanban</a>
+            <a href="../index.html" class="navbar-button"><i class="fas fa-home"></i> Home</a>
+            <a href="estoque.html" class="navbar-button"><i class="fas fa-box"></i> Estoque</a>
+            <a href="relatorios.html" class="navbar-button"><i class="fas fa-chart-line"></i> Relatórios</a>
+            <a href="vendas.html" class="navbar-button"><i class="fas fa-shopping-cart"></i> Painel de Vendas</a>
+        </nav>
+    </header>
+        <h1 class="main-title-vendas">Painel de Vendas</h1>
+        <div class="container">    
+            <section class="overview">
+                <div class="card">
+                    <h2>Total de Vendas</h2>
+                    <p id="totalSales">R$ 1.335,68</p>
+                </div>
+                <div class="card">
+                    <h2>Total de Produtos</h2>
+                    <p id="totalProducts">32</p>
+                </div>
+                <div class="card">
+                    <h2>Média de Vendas</h2>
+                    <p id="averageSales">R$ 41,74</p>
+                </div>
+            </section>
+    
+            <section class="sales-table">
+                <h2>Vendas Recentes</h2>
+                <table id="salesTable">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Preço Unitário</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                        <td>17/02/2025</td><td>Filé Mignon</td><td>2</td><td>R$ 79,99</td><td>R$ 159,98</td>
+                       </tr>
+                       <tr>
+                        <td>17/02/2025</td><td>Salmão Grelhado</td><td>7</td><td>R$ 89,99</td><td>R$ 629,93</td>
+                       </tr>
+                       <tr>
+                        <td>17/02/2025</td><td>Coca-Cola</td><td>11</td><td>R$ 5,99</td><td>R$ 65,89</td>
+                       </tr>
+                       <tr>
+                        <td>17/02/2025</td><td>Porções de Fritas</td><td>12</td><td>R$ 39,99</td><td>R$ 479,88</td>
+                       </tr>
+                    </tbody>
+                </table>
+            </section>
+    
+            <section class="add-sale">
+                <h2>Adicionar Venda</h2>
+                <form id="salesForm">
+                    <label for="product">Produto:</label>
+                    <input type="text" id="product" required>
+                    <label for="quantity">Quantidade:</label>
+                    <input type="number" id="quantity" required>
+                    <label for="unitPrice">Preço Unitário (R$):</label>
+                    <input type="number" id="unitPrice" step="0.01" required>
+                    <button type="submit">Adicionar Venda</button>
+                </form>
+            </section>
+        </div>
+
+
+    <footer class="footer">
+        <p class="copyright">© 2025 BisBranco. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../scripts/vendas.js"></script>
+</body>
+</html>
